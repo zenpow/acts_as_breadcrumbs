@@ -21,12 +21,12 @@ class WebPage < ActiveRecord::Base
   acts_as_breadcrumbs(:basename => :title, :separator => "&nbsp;&gt;&nbsp;")
 end
 
-class BreadcrumbsTest < Test::Unit::TestCase
+class BreadcrumbsTest < MiniTest::Unit::TestCase
   fixtures :nodes, :locations, :soldiers, :web_pages
 
   def test_no_options
     nodes(:node_3).save
-    assert_equal "Root:Level 1:Level 2", nodes(:node_3).breadcrumbs    
+    assert_equal "Root:Level 1:Level 2", nodes(:node_3).breadcrumbs
   end
 
   def test_alternate_attribute
@@ -46,7 +46,7 @@ class BreadcrumbsTest < Test::Unit::TestCase
 
   def test_include_root
     locations(:location_1).save
-    assert_equal "HQ", locations(:location_1).location_string    
+    assert_equal "HQ", locations(:location_1).location_string
   end
 
   def test_not_include_root

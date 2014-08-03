@@ -2790,3 +2790,138 @@ INCLUDE ROOT true
 
   [4;35;1mSQL (0.001858)[0m   [0mROLLBACK[0m
 
+  [1m[36m (1.8ms)[0m  [1mDROP TABLE "nodes"[0m
+  [1m[35m (1.1ms)[0m  CREATE TABLE "nodes" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "parent_id" integer, "name" varchar(255), "breadcrumbs" varchar(255)) 
+  [1m[36m (0.9ms)[0m  [1mDROP TABLE "locations"[0m
+  [1m[35m (1.2ms)[0m  CREATE TABLE "locations" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "parent_id" integer, "name" varchar(255), "location_string" varchar(255)) 
+  [1m[36m (0.9ms)[0m  [1mDROP TABLE "soldiers"[0m
+  [1m[35m (1.1ms)[0m  CREATE TABLE "soldiers" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "parent_id" integer, "name" varchar(255), "chain_o_command" varchar(255)) 
+  [1m[36m (1.0ms)[0m  [1mDROP TABLE "web_pages"[0m
+  [1m[35m (1.1ms)[0m  CREATE TABLE "web_pages" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "parent_id" integer, "title" varchar(255), "slug" varchar(255), "url" varchar(255), "breadcrumbs" varchar(255)) 
+  [1m[36m (0.1ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[36m (1.8ms)[0m  [1mDROP TABLE "nodes"[0m
+  [1m[35m (1.2ms)[0m  CREATE TABLE "nodes" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "parent_id" integer, "name" varchar(255), "breadcrumbs" varchar(255)) 
+  [1m[36m (1.1ms)[0m  [1mDROP TABLE "locations"[0m
+  [1m[35m (1.2ms)[0m  CREATE TABLE "locations" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "parent_id" integer, "name" varchar(255), "location_string" varchar(255)) 
+  [1m[36m (1.1ms)[0m  [1mDROP TABLE "soldiers"[0m
+  [1m[35m (1.2ms)[0m  CREATE TABLE "soldiers" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "parent_id" integer, "name" varchar(255), "chain_o_command" varchar(255)) 
+  [1m[36m (0.9ms)[0m  [1mDROP TABLE "web_pages"[0m
+  [1m[35m (1.3ms)[0m  CREATE TABLE "web_pages" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "parent_id" integer, "title" varchar(255), "slug" varchar(255), "url" varchar(255), "breadcrumbs" varchar(255)) 
+  [1m[36m (0.1ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[36m (1.8ms)[0m  [1mDROP TABLE "nodes"[0m
+  [1m[35m (1.2ms)[0m  CREATE TABLE "nodes" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "parent_id" integer, "name" varchar(255), "breadcrumbs" varchar(255)) 
+  [1m[36m (1.1ms)[0m  [1mDROP TABLE "locations"[0m
+  [1m[35m (1.1ms)[0m  CREATE TABLE "locations" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "parent_id" integer, "name" varchar(255), "location_string" varchar(255)) 
+  [1m[36m (1.0ms)[0m  [1mDROP TABLE "soldiers"[0m
+  [1m[35m (1.1ms)[0m  CREATE TABLE "soldiers" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "parent_id" integer, "name" varchar(255), "chain_o_command" varchar(255)) 
+  [1m[36m (1.2ms)[0m  [1mDROP TABLE "web_pages"[0m
+  [1m[35m (1.2ms)[0m  CREATE TABLE "web_pages" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "parent_id" integer, "title" varchar(255), "slug" varchar(255), "url" varchar(255), "breadcrumbs" varchar(255)) 
+  [1m[36m (0.1ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[36m (1.9ms)[0m  [1mDROP TABLE "nodes"[0m
+  [1m[35m (1.3ms)[0m  CREATE TABLE "nodes" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "parent_id" integer, "name" varchar(255), "breadcrumbs" varchar(255)) 
+  [1m[36m (1.0ms)[0m  [1mDROP TABLE "locations"[0m
+  [1m[35m (1.0ms)[0m  CREATE TABLE "locations" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "parent_id" integer, "name" varchar(255), "location_string" varchar(255)) 
+  [1m[36m (0.9ms)[0m  [1mDROP TABLE "soldiers"[0m
+  [1m[35m (1.1ms)[0m  CREATE TABLE "soldiers" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "parent_id" integer, "name" varchar(255), "chain_o_command" varchar(255)) 
+  [1m[36m (1.1ms)[0m  [1mDROP TABLE "web_pages"[0m
+  [1m[35m (0.9ms)[0m  CREATE TABLE "web_pages" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "parent_id" integer, "title" varchar(255), "slug" varchar(255), "url" varchar(255), "breadcrumbs" varchar(255)) 
+  [1m[36m (0.2ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[36m (1.8ms)[0m  [1mDROP TABLE "nodes"[0m
+  [1m[35m (3.3ms)[0m  CREATE TABLE "nodes" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "parent_id" integer, "name" varchar(255), "breadcrumbs" varchar(255)) 
+  [1m[36m (1.1ms)[0m  [1mDROP TABLE "locations"[0m
+  [1m[35m (1.2ms)[0m  CREATE TABLE "locations" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "parent_id" integer, "name" varchar(255), "location_string" varchar(255)) 
+  [1m[36m (1.2ms)[0m  [1mDROP TABLE "soldiers"[0m
+  [1m[35m (1.2ms)[0m  CREATE TABLE "soldiers" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "parent_id" integer, "name" varchar(255), "chain_o_command" varchar(255)) 
+  [1m[36m (1.0ms)[0m  [1mDROP TABLE "web_pages"[0m
+  [1m[35m (1.0ms)[0m  CREATE TABLE "web_pages" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "parent_id" integer, "title" varchar(255), "slug" varchar(255), "url" varchar(255), "breadcrumbs" varchar(255)) 
+  [1m[36m (0.1ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[36m (1.8ms)[0m  [1mDROP TABLE "nodes"[0m
+  [1m[35m (1.3ms)[0m  CREATE TABLE "nodes" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "parent_id" integer, "name" varchar(255), "breadcrumbs" varchar(255)) 
+  [1m[36m (0.9ms)[0m  [1mDROP TABLE "locations"[0m
+  [1m[35m (1.0ms)[0m  CREATE TABLE "locations" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "parent_id" integer, "name" varchar(255), "location_string" varchar(255)) 
+  [1m[36m (0.9ms)[0m  [1mDROP TABLE "soldiers"[0m
+  [1m[35m (1.0ms)[0m  CREATE TABLE "soldiers" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "parent_id" integer, "name" varchar(255), "chain_o_command" varchar(255)) 
+  [1m[36m (0.8ms)[0m  [1mDROP TABLE "web_pages"[0m
+  [1m[35m (1.0ms)[0m  CREATE TABLE "web_pages" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "parent_id" integer, "title" varchar(255), "slug" varchar(255), "url" varchar(255), "breadcrumbs" varchar(255)) 
+  [1m[36m (0.2ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[36m (2.0ms)[0m  [1mDROP TABLE "nodes"[0m
+  [1m[35m (1.1ms)[0m  CREATE TABLE "nodes" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "parent_id" integer, "name" varchar(255), "breadcrumbs" varchar(255)) 
+  [1m[36m (0.9ms)[0m  [1mDROP TABLE "locations"[0m
+  [1m[35m (0.8ms)[0m  CREATE TABLE "locations" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "parent_id" integer, "name" varchar(255), "location_string" varchar(255)) 
+  [1m[36m (0.9ms)[0m  [1mDROP TABLE "soldiers"[0m
+  [1m[35m (1.0ms)[0m  CREATE TABLE "soldiers" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "parent_id" integer, "name" varchar(255), "chain_o_command" varchar(255)) 
+  [1m[36m (1.0ms)[0m  [1mDROP TABLE "web_pages"[0m
+  [1m[35m (0.9ms)[0m  CREATE TABLE "web_pages" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "parent_id" integer, "title" varchar(255), "slug" varchar(255), "url" varchar(255), "breadcrumbs" varchar(255)) 
+  [1m[36m (0.1ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[36m (2.2ms)[0m  [1mDROP TABLE "nodes"[0m
+  [1m[35m (1.1ms)[0m  CREATE TABLE "nodes" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "parent_id" integer, "name" varchar(255), "breadcrumbs" varchar(255)) 
+  [1m[36m (1.0ms)[0m  [1mDROP TABLE "locations"[0m
+  [1m[35m (1.4ms)[0m  CREATE TABLE "locations" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "parent_id" integer, "name" varchar(255), "location_string" varchar(255)) 
+  [1m[36m (0.9ms)[0m  [1mDROP TABLE "soldiers"[0m
+  [1m[35m (1.0ms)[0m  CREATE TABLE "soldiers" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "parent_id" integer, "name" varchar(255), "chain_o_command" varchar(255)) 
+  [1m[36m (1.0ms)[0m  [1mDROP TABLE "web_pages"[0m
+  [1m[35m (0.9ms)[0m  CREATE TABLE "web_pages" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "parent_id" integer, "title" varchar(255), "slug" varchar(255), "url" varchar(255), "breadcrumbs" varchar(255)) 
+  [1m[36m (0.1ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[36m (1.9ms)[0m  [1mDROP TABLE "nodes"[0m
+  [1m[35m (1.2ms)[0m  CREATE TABLE "nodes" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "parent_id" integer, "name" varchar(255), "breadcrumbs" varchar(255)) 
+  [1m[36m (1.1ms)[0m  [1mDROP TABLE "locations"[0m
+  [1m[35m (1.1ms)[0m  CREATE TABLE "locations" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "parent_id" integer, "name" varchar(255), "location_string" varchar(255)) 
+  [1m[36m (1.1ms)[0m  [1mDROP TABLE "soldiers"[0m
+  [1m[35m (1.2ms)[0m  CREATE TABLE "soldiers" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "parent_id" integer, "name" varchar(255), "chain_o_command" varchar(255)) 
+  [1m[36m (0.9ms)[0m  [1mDROP TABLE "web_pages"[0m
+  [1m[35m (0.8ms)[0m  CREATE TABLE "web_pages" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "parent_id" integer, "title" varchar(255), "slug" varchar(255), "url" varchar(255), "breadcrumbs" varchar(255)) 
+  [1m[36m (0.2ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[36m (1.8ms)[0m  [1mDROP TABLE "nodes"[0m
+  [1m[35m (1.1ms)[0m  CREATE TABLE "nodes" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "parent_id" integer, "name" varchar(255), "breadcrumbs" varchar(255)) 
+  [1m[36m (1.0ms)[0m  [1mDROP TABLE "locations"[0m
+  [1m[35m (0.9ms)[0m  CREATE TABLE "locations" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "parent_id" integer, "name" varchar(255), "location_string" varchar(255)) 
+  [1m[36m (0.9ms)[0m  [1mDROP TABLE "soldiers"[0m
+  [1m[35m (1.3ms)[0m  CREATE TABLE "soldiers" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "parent_id" integer, "name" varchar(255), "chain_o_command" varchar(255)) 
+  [1m[36m (1.0ms)[0m  [1mDROP TABLE "web_pages"[0m
+  [1m[35m (0.9ms)[0m  CREATE TABLE "web_pages" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "parent_id" integer, "title" varchar(255), "slug" varchar(255), "url" varchar(255), "breadcrumbs" varchar(255)) 
+  [1m[36m (0.1ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[36m (2.0ms)[0m  [1mDROP TABLE "nodes"[0m
+  [1m[35m (1.2ms)[0m  CREATE TABLE "nodes" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "parent_id" integer, "name" varchar(255), "breadcrumbs" varchar(255)) 
+  [1m[36m (1.1ms)[0m  [1mDROP TABLE "locations"[0m
+  [1m[35m (1.1ms)[0m  CREATE TABLE "locations" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "parent_id" integer, "name" varchar(255), "location_string" varchar(255)) 
+  [1m[36m (0.9ms)[0m  [1mDROP TABLE "soldiers"[0m
+  [1m[35m (1.1ms)[0m  CREATE TABLE "soldiers" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "parent_id" integer, "name" varchar(255), "chain_o_command" varchar(255)) 
+  [1m[36m (0.9ms)[0m  [1mDROP TABLE "web_pages"[0m
+  [1m[35m (1.0ms)[0m  CREATE TABLE "web_pages" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "parent_id" integer, "title" varchar(255), "slug" varchar(255), "url" varchar(255), "breadcrumbs" varchar(255)) 
+  [1m[36m (0.1ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[36m (2.0ms)[0m  [1mDROP TABLE "nodes"[0m
+  [1m[35m (1.3ms)[0m  CREATE TABLE "nodes" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "parent_id" integer, "name" varchar(255), "breadcrumbs" varchar(255)) 
+  [1m[36m (0.9ms)[0m  [1mDROP TABLE "locations"[0m
+  [1m[35m (1.0ms)[0m  CREATE TABLE "locations" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "parent_id" integer, "name" varchar(255), "location_string" varchar(255)) 
+  [1m[36m (0.9ms)[0m  [1mDROP TABLE "soldiers"[0m
+  [1m[35m (0.9ms)[0m  CREATE TABLE "soldiers" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "parent_id" integer, "name" varchar(255), "chain_o_command" varchar(255)) 
+  [1m[36m (0.9ms)[0m  [1mDROP TABLE "web_pages"[0m
+  [1m[35m (1.0ms)[0m  CREATE TABLE "web_pages" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "parent_id" integer, "title" varchar(255), "slug" varchar(255), "url" varchar(255), "breadcrumbs" varchar(255)) 
+  [1m[36m (0.2ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[36m (1.7ms)[0m  [1mDROP TABLE "nodes"[0m
+  [1m[35m (0.9ms)[0m  CREATE TABLE "nodes" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "parent_id" integer, "name" varchar(255), "breadcrumbs" varchar(255)) 
+  [1m[36m (1.0ms)[0m  [1mDROP TABLE "locations"[0m
+  [1m[35m (0.9ms)[0m  CREATE TABLE "locations" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "parent_id" integer, "name" varchar(255), "location_string" varchar(255)) 
+  [1m[36m (0.7ms)[0m  [1mDROP TABLE "soldiers"[0m
+  [1m[35m (0.9ms)[0m  CREATE TABLE "soldiers" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "parent_id" integer, "name" varchar(255), "chain_o_command" varchar(255)) 
+  [1m[36m (0.7ms)[0m  [1mDROP TABLE "web_pages"[0m
+  [1m[35m (0.8ms)[0m  CREATE TABLE "web_pages" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "parent_id" integer, "title" varchar(255), "slug" varchar(255), "url" varchar(255), "breadcrumbs" varchar(255)) 
+  [1m[36m (0.1ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[36m (2.0ms)[0m  [1mDROP TABLE "nodes"[0m
+  [1m[35m (1.2ms)[0m  CREATE TABLE "nodes" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "parent_id" integer, "name" varchar(255), "breadcrumbs" varchar(255)) 
+  [1m[36m (0.9ms)[0m  [1mDROP TABLE "locations"[0m
+  [1m[35m (1.1ms)[0m  CREATE TABLE "locations" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "parent_id" integer, "name" varchar(255), "location_string" varchar(255)) 
+  [1m[36m (0.9ms)[0m  [1mDROP TABLE "soldiers"[0m
+  [1m[35m (0.9ms)[0m  CREATE TABLE "soldiers" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "parent_id" integer, "name" varchar(255), "chain_o_command" varchar(255)) 
+  [1m[36m (0.8ms)[0m  [1mDROP TABLE "web_pages"[0m
+  [1m[35m (0.9ms)[0m  CREATE TABLE "web_pages" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "parent_id" integer, "title" varchar(255), "slug" varchar(255), "url" varchar(255), "breadcrumbs" varchar(255)) 
+  [1m[36m (0.1ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[36m (1.7ms)[0m  [1mDROP TABLE "nodes"[0m
+  [1m[35m (1.1ms)[0m  CREATE TABLE "nodes" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "parent_id" integer, "name" varchar(255), "breadcrumbs" varchar(255)) 
+  [1m[36m (0.9ms)[0m  [1mDROP TABLE "locations"[0m
+  [1m[35m (1.0ms)[0m  CREATE TABLE "locations" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "parent_id" integer, "name" varchar(255), "location_string" varchar(255)) 
+  [1m[36m (0.9ms)[0m  [1mDROP TABLE "soldiers"[0m
+  [1m[35m (1.0ms)[0m  CREATE TABLE "soldiers" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "parent_id" integer, "name" varchar(255), "chain_o_command" varchar(255)) 
+  [1m[36m (1.0ms)[0m  [1mDROP TABLE "web_pages"[0m
+  [1m[35m (0.9ms)[0m  CREATE TABLE "web_pages" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "parent_id" integer, "title" varchar(255), "slug" varchar(255), "url" varchar(255), "breadcrumbs" varchar(255)) 
+  [1m[36m (0.1ms)[0m  [1mSELECT version FROM "schema_migrations"[0m

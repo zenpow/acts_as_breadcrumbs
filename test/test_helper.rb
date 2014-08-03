@@ -8,6 +8,7 @@ $LOAD_PATH.unshift(File.dirname(__FILE__))
 require 'active_record'
 require 'sqlite3'
 require 'acts_as_breadcrumbs'
+require 'active_support'
 
 def load_schema
   config = YAML::load(IO.read(File.dirname(__FILE__) + '/database.yml'))

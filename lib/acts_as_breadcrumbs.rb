@@ -4,7 +4,7 @@
 module ActiveRecord #:nodoc:
   module Acts #:nodoc:
 
-    # ActsAsBreadcrumbs - In Hansel & Gretel, Hansel drops breadcrumbs along the trail through 
+    # ActsAsBreadcrumbs - In Hansel & Gretel, Hansel drops breadcrumbs along the trail through
     # the forrest to find their way back home. Like Hansel, this plugin adds a breadcrumbs trail
     # attribute based on a base attribute.
     module Breadcrumbs
@@ -56,14 +56,14 @@ module ActiveRecord #:nodoc:
             def breadcrumbs
               trail = self.ancestors.collect(&:#{breadcrumbs_basename})
               trail.reverse!
-        
+
               trail << self.#{breadcrumbs_self_basename}
 
               trail.shift unless #{breadcrumbs_include_root}
               trail.join(\"#{breadcrumbs_separator}\")
             end
           "
-          
+
           # Creates a breadcrumb string based on an acts_as_tree model
           create = "
             def create_breadcrumb_#{breadcrumbs_attr}
