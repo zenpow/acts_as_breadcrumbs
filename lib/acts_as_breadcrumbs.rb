@@ -1,3 +1,5 @@
+require 'acts_as_tree'
+
 # Copyright (c) 2007 Flinn Mueller
 # Released under the MIT License.  See the MIT-LICENSE file for more details.
 
@@ -105,3 +107,7 @@ module ActiveRecord #:nodoc:
     end
   end
 end
+
+
+ActiveRecord::Base.send :include, ActsAsTree
+ActiveRecord::Base.send :include, ActiveRecord::Acts::Breadcrumbs
