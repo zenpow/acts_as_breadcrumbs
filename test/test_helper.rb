@@ -1,34 +1,27 @@
-$:.unshift(File.dirname(__FILE__) + '/../lib')
-
-require 'test/unit'
-require File.expand_path(File.join(File.dirname(__FILE__), '../../../../config/environment.rb'))
 require 'rubygems'
-require 'active_support/breakpoint'
-require 'active_record/fixtures'
+require 'yaml'
+require 'minitest/autorun'
 
-config = YAML::load(IO.read(File.dirname(__FILE__) + '/database.yml'))
-ActiveRecord::Base.logger = Logger.new(File.dirname(__FILE__) + "/debug.log")
-ActiveRecord::Base.establish_connection(config[ENV['DB'] || 'sqlite'])
+$LOAD_PATH.unshift(File.join(File.dirname(__FILE__), '..', 'lib'))
+$LOAD_PATH.unshift(File.dirname(__FILE__))
 
-load(File.dirname(__FILE__) + "/schema.rb")
+require 'active_record'
+require 'sqlite3'
+require 'acts_as_breadcrumbs'
 
-Test::Unit::TestCase.fixture_path = File.dirname(__FILE__) + "/fixtures/"
-$LOAD_PATH.unshift(Test::Unit::TestCase.fixture_path)
+def load_schema
+  config = YAML::load(IO.read(File.dirname(__FILE__) + '/database.yml'))
 
-class Test::Unit::TestCase #:nodoc:
-  def create_fixtures(*table_names)
-    if block_given?
-      Fixtures.create_fixtures(Test::Unit::TestCase.fixture_path, table_names) { yield }
-    else
-      Fixtures.create_fixtures(Test::Unit::TestCase.fixture_path, table_names)
-    end
+  if defined?(ActiveSupport::BufferedLogger)
+    ActiveRecord::Base.logger = ActiveSupport::BufferedLogger.new(File.dirname(__FILE__) + "/debug.log")
+  else
+    ActiveRecord::Base.logger = ActiveSupport::Logger.new(File.dirname(__FILE__) + "/debug.log")
   end
 
-  # Turn off transactional fixtures if you're working with MyISAM tables in MySQL
-  self.use_transactional_fixtures = true
-  
-  # Instantiated fixtures are slow, but give you @david where you otherwise would need people(:david)
-  self.use_instantiated_fixtures  = false
+  ActiveRecord::Base.establish_connection(config['sqlite3'])
 
-  # Add more helper methods to be used by all tests here...
+  load(File.dirname(__FILE__) + "/schema.rb")
 end
+
+load_schema
+require File.dirname(__FILE__) + '/../init.rb'
