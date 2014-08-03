@@ -24,5 +24,16 @@ def load_schema
   load(File.dirname(__FILE__) + "/schema.rb")
 end
 
+class ActiveSupport::TestCase
+  include ActiveRecord::TestFixtures
+
+  self.fixture_path = File.dirname(__FILE__) + "/fixtures"
+
+  def create_fixtures(*table_names, &block)
+    Fixtures.create_fixtures(ActiveSupport::TestCase.fixture_path, table_names, {}, &block)
+  end
+
+end
+
 load_schema
 require File.dirname(__FILE__) + '/../init.rb'
