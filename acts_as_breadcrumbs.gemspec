@@ -7,11 +7,11 @@ require 'version'
 Gem::Specification.new do |spec|
   spec.name           = "acts_as_breadcrumbs"
   spec.version        = ActsAsBreadcrumbs::VERSION
-  spec.authors        = [""]
-  spec.email          = [""]
-  spec.description    = %q{}
-  spec.summary        = %q{}
-  spec.homepage       = ""
+  spec.authors        = ["Zac Zheng"]
+  spec.email          = ["zac@zenpow.com"]
+  spec.description    = %q{The Rails plugin acts_as_breadcrumbs gemified.}
+  spec.summary        = %q{Uses an acts_as_tree model and creates a breadcrumbs trail attribute using a base attribute.}
+  spec.homepage       = "https://github.com/zaczheng/acts_as_breadcrumbs"
   spec.license        = "MIT"
 
   spec.files         = `git ls-files`.split($/)
